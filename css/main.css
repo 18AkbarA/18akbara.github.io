@@ -22,12 +22,15 @@ background-color:#FFFF00;
 
 }
 #maindiv{
-	position:fixed;
+	position:absolute;
 	z-index:30;
 	left:0;
 	top:0;
 	width:100%;
-	height:100%;
+	min-height:100%;
+	display:table;
+	overflow-x:hidden;
+	overflow-y:scroll;
 	background-color: rgba(235, 235, 224, .7);
 	text-shadow: -1px -1px 0 black,
     1px -1px 0 black,
@@ -35,7 +38,8 @@ background-color:#FFFF00;
     1px 1px 0 black;
 	color:white;
 	font-family:arial black;
-	border:3px solid #2e2e1f;
+	border:0px;
+	border-top:3px solid #2e2e1f;
 }
 
 .heightspan{

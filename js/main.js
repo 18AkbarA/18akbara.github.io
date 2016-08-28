@@ -26,10 +26,10 @@ function moveKarelRight(){
 
 function shouldPlaceBall(){
 	randnumb = Math.floor((Math.random() * 5) + 1);
-	console.log(randnumb);
+	
 	if(randnumb === 2 || randnumb === 4){
 		placeBall();
-		console.log("placed numb " +randnumb);
+		
 	}
 
 }
@@ -47,11 +47,11 @@ function detKarelPos(){
 	kareltruebot = karelbot.replace("px","");
 
 	newkarelbot = eval(kareltruebot) + 100;
-	//$("#karel").css("bottom", newkarelbot+"px");
+	
 	if (whichway == "left"){
 	
 		if (eval(kareltruebot) > docheight){
-		console.log("yo!");
+		
 		$("#karel").attr('style', '');
 		moveKarelLeft();
 		}
@@ -63,7 +63,7 @@ function detKarelPos(){
 	else{
 	
 		if (eval(kareltruebot) > docheight){
-		console.log("yo!");
+		
 		$("#karel").attr('style', 'left:-100px;bottom:0px');
 		moveKarelLeft();
 		}
