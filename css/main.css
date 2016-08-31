@@ -2,6 +2,10 @@
 	margin:0;
 	padding:0;
 }
+body,html{
+	width:100%;
+	height:100%;
+}
 #karel{
 z-index:2;
 position:fixed;
@@ -38,7 +42,7 @@ background-color:#FFFF00;
     1px 1px 0 black;
 	color:white;
 	font-family:arial black;
-	border:0px;
+	border:0px;	
 	border-top:3px solid #2e2e1f;
 }
 
