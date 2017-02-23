@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Test Tutorial</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".explain").on("mouseover",function(){
+        desc = $(this).attr("desc");
+        
+        $("#descdiv").html(desc);
+    });
+	$(".statement").on("mouseout",function(){
+        desc = $(this).attr("desc");
+        
+        $("#descdiv").html(desc);
+    });
+});
+</script>
+
+
+
+
+<style>
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	//background-image:url('http://gematsu.com/gallery/albums/valkyrie-drive-bhikkhuni/august-3-2015/Valkyrie-Drive-Bhikkhuni_2015_08-03-15_010.jpg');
+	background-image:url('http://www.shauntmax30.com/data/out/34/1232892-desktop-queens-blade-wallpaper-h1232892.jpg');
+	background-size:cover;
+	font-size:20pt;
+}
+.explain{
+	cursor:pointer;
+}
+.keyword{
+	color: #C277B7;
+}
+.item{
+color:#4747DB;
+}
+</style>
+
+</head>
+
+
+
+<body>
+
+<span class="statement">
+<span class="explain keyword" desc="<b>Variable Type:</b> defines what type the variable has.">int</span>
+ <span class="explain" desc="<b>Variable Name:</b> names the variable.">theInt</span> = 
+ <span class="item explain" desc="<b>Variable Value:</b> the value assigned to the variable">0</span>;
+</span>
+
+
+ <div id="deschead">Description:</div>
+<div id="descdiv"></div>
+
+</body>
+</html>
